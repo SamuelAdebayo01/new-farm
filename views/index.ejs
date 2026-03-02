@@ -1,0 +1,267 @@
+<%- include("partials/header") %>
+
+<!-- HERO SECTION -->
+<section class="hero-home">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>SR &amp; M FARMS</h1>
+
+    <p>
+      We are passionate about delivering healthy, organic produce straight from our fields<br />
+      to your home
+    </p>
+
+    <a href="/about" class="hero-btn">About Us</a>
+  </div>
+
+  <div class="scroll-indicator">
+    <span></span>
+  </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="products-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Products</h2>
+      <p>Fresh farm produce grown with care and quality</p>
+    </div>
+
+    <div class="products-grid">
+  <% products.slice(0, 4).forEach(product => { %>
+    <div class="product-card">
+      <div class="product-image">
+        <img src="<%= product.image %>" alt="<%= product.name %>">
+
+        <!-- OVERLAY -->
+        <div class="product-overlay">
+          <a href="/products/<%= product.slug %>" class="overlay-btn">
+            View Product
+          </a>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h3><%= product.name %></h3>
+        <span class="price"><%= product.price %></span>
+      </div>
+    </div>
+  <% }) %>
+</div>
+  </div>
+</section>
+
+<!-- SPLIT SECTION -->
+<section class="home-about">
+  <div class="container about-grid">
+
+    <!-- TEXT SIDE -->
+    <div class="about-text">
+      <h2>WE CARE ABOUT YOUR HEALTH AND OUR ANIMALS'</h2>
+      <p>
+        At SR & M Farms, we offer a wide range of fresh, organically grown farm products
+        including vegetables like tomatoes, sweet corn, cucumbers, okro, spinach,
+        soko, pumpkin, leafy greens, habanero pepper, and plantain.
+      </p>
+
+      <p class="light-text">
+        We also supply 4-week-old brooded birds for poultry farming and stock
+        high-quality agro-allied products to support farmers and agribusinesses.
+      </p>
+    </div>
+
+    <!-- IMAGE SIDE -->
+    <div class="about-image">
+      <img src="/images/chicken1.jpg" alt="Farm Chickens">
+    </div>
+
+  </div>
+</section>
+
+
+<section class="about-highlight">
+  <div class="container about-grid">
+
+    <div class="about-image">
+      <img src="/images/vegetables.jpg" alt="Fresh Organic Produce">
+    </div>
+
+    <div class="about-content">
+      <h2>WE CARE ABOUT YOUR HEALTH AND OUR ANIMALS'</h2>
+
+      <h3>100% Organic Produce</h3>
+      <p>
+        Our produce is grown without synthetic chemicals, fertilizers,
+        or pesticides. We prioritize natural farming methods to ensure
+        healthier food and a safer environment.
+      </p>
+
+      <h3>Packaged with Care</h3>
+      <p>
+        All our farm products are carefully harvested and hygienically
+        packaged to preserve freshness and quality. We ensure every
+        item reaches you clean, safe, and ready to enjoy or sell.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="services-section">
+  <div class="container services-grid">
+
+    <!-- Left Image -->
+    <div class="services-image">
+      <img src="/images/bananas.jpg" alt="Farm Produce">
+    </div>
+
+    <!-- Right Content -->
+    <div class="services-content">
+      <h2>OUR SERVICES</h2>
+
+      <div class="accordion">
+
+        <div class="accordion-item">
+        <button class="accordion-header">
+             SUPPLY OF FARM PRODUCE
+        <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+            <p>
+              We specialize in the reliable supply of fresh, high-quality
+              farm produce sourced directly from trusted growers.
+              Whether you're a retailer, wholesaler, restaurant, or
+              individual customer, we deliver a wide range of seasonal
+              fruits, vegetables, grains, and other agricultural products.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            BROODING AND SALES OF 4 WEEKS BIRDS
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>We offer expert brooding services and the sale of healthy, well-managed 4-week-old birds ready for rearing or further production. Our birds are raised under strict biosecurity measures and optimal nutrition to ensure robust health, rapid growth, and high survival rates. <br> Whether you need day-old chicks brooded to 4 weeks or prefer to purchase directly from our farm, we guarantee quality stock that will perform excellently in your flock.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            PROCESSING OF LIVESTOCK
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>We provide hygienic, efficient, and standardized livestock processing services to ensure safe, high-quality meat products. Our facility handles the slaughtering, dressing, and packaging of various livestock under strict sanitary conditions and in compliance with regulatory standards. From humane handling to final packaging, every step is carefully managed to preserve freshness, maintain food safety, and deliver premium cuts to our customers.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            FARM SETUP AND CONSULTANCY
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>We offer comprehensive farm setup and consultancy services designed to help you establish and grow a successful agricultural enterprise. From site assessment and farm layout planning to sourcing equipment and implementing best management practices, our team provides expert guidance every step of the way.<br>
+            Whether you’re starting a small-scale project or a large commercial farm, we tailor solutions to your specific goals, budget, and environment. <br><br>
+
+            Our consultancy covers: <br>
+            ✅ Farm design and infrastructure planning <br>
+            ✅ Livestock and crop production systems <br>
+            ✅ Training and capacity building <br>
+            ✅ Business planning and profitability analysis <br>
+            ✅ Sustainable and modern farming techniques <br>
+
+            Partner with us to turn your farming vision into a thriving reality.</p>
+
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            SALES OF AGRO-ALLIED PRODUCTS
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>We supply a wide range of high-quality agro-allied products essential for successful farming and gardening. From nutrient-rich fertilizers to healthy, disease-resistant seedlings, we provide everything you need to boost productivity and achieve sustainable yields. <br><br>
+
+Our product offerings include: <br>
+✅ Fertilizers – Organic and inorganic options to enrich your soil and promote vigorous plant growth. <br>
+✅ Seeds and Seedlings – Carefully selected varieties to ensure strong germination and excellent performance. <br>
+✅ Crop protection products – Herbicides, pesticides, and fungicides for effective pest and disease management. <br>
+✅ Farm inputs and tools – Modern implements and accessories to support efficient farm operations. <br><br>
+
+Whether you’re a smallholder farmer or a large commercial grower, our products are sourced from reputable manufacturers and delivered with expert guidance on their proper use.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/contact" class="services-btn">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="main-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>S.R & M FARMS</h2>
+      <p>
+        Our farm in Iragunshi, Epe spans across fertile land organized
+        into Crop Fields, Fruit Orchard, Poultry Pen, Livestock Zone,
+        and Processing Area
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4 class="footer-title">QUICK LINKS</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4 class="footer-title">CONTACTS</h4>
+
+      <div class="footer-contact-item">
+           <i class="fa-solid fa-location-dot footer-icon"></i>
+        <div>
+          <span>ADDRESS</span>
+          <p>1, Adebayo Street off Arin-olowo Road, Iragunshi, Eredo LCDA, Epe, Lagos State</p>
+        </div>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa fa-phone"></i>
+        <div>
+          <span>CALL US NOW</span>
+          <a href="tel:08066887442">08066887442</a>
+        </div>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa fa-envelope"></i>
+        <div>
+          <span>EMAIL US</span>
+          <a href="mailto:austaadebs@gmail.com">austaadebs@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<%- include("partials/footer") %>

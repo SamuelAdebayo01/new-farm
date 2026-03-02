@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>S.R.& M Farms</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-container">
+
+    <a href="/" class="logo">
+      <img src="/images/11.png" alt="SRNM Farms">
+    </a>
+
+    <nav class="nav-links">
+      <a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a>
+      <a href="/about" class="<%= currentPage === 'about' ? 'active' : '' %>">About Us</a>
+      <a href="/products" class="<%= currentPage === 'products' ? 'active' : '' %>">Our Products</a>
+      <a href="/contact" class="<%= currentPage === 'contact' ? 'active' : '' %>">Contact Us</a>
+      <a href="/blog">Blog</a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="/cart" class="cart-btn">
+        🛒
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+
+  </div>
+</header>

@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<section class="section">
+  <div class="container product-details">
+
+    <img src="<%= product.image %>" alt="<%= product.name %>">
+
+    <div class="details-text">
+      <h2><%= product.name %></h2>
+      <p class="price"><%= product.price %></p>
+      <p><%= product.description %></p>
+
+      <a href="/contact" class="btn-primary">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+<%- include("partials/footer") %>
